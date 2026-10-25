@@ -52,7 +52,7 @@
         <div class="passcode-container">
           <div class="passcode-header">
             <h3 id="quiz-title">Enter a passcode</h3>
-            <p id="quiz-text">Enter the 4-digit secret passcode 💖</p>
+            <p id="quiz-text">Enter the 6-digit secret passcode 💖</p>
           </div>
 
           <!-- 4 Passcode Boxes (Matching Reference Exactly) -->
@@ -61,8 +61,14 @@
             <div class="passcode-box" id="b1"></div>
             <div class="passcode-box" id="b2"></div>
             <div class="passcode-box" id="b3"></div>
+            <div class="passcode-box" id="b4"></div>
+            <div class="passcode-box" id="b5"></div>
           </div>
 
+          <!-- Your new hint code -->
+          <p style="text-align: center; font-size: 14px; color: #555; margin-top: 20px; font-style: italic;">
+             Hint: The day I met sweetest and energetic person 🥰🥰💡
+          </p>
           <!-- Virtual Circular Keypad (Reference Aesthetic) -->
           <div class="keypad" id="keypad">
             <button class="key-btn" onclick="pressKey('1')"><span>1</span></button>
@@ -314,7 +320,7 @@
                 <div class="photo-inner-box">
                   <img src="assets/memory1.jpg" alt="Anya with Birthday Cake" />
                 </div>
-                <div class="photo-caption-tag">Waku Waku Cake! 🎂</div>
+                <div class="photo-caption-tag">The Squad "PRAS"!!🩵🫶🏻</div>
               </div>
             </div>
 
@@ -331,7 +337,7 @@
                 <div class="photo-inner-box">
                   <img src="assets/memory2.jpg" alt="Anya Smug Heh Face" />
                 </div>
-                <div class="photo-caption-tag">Heh! Peanuts & Gift 🎁</div>
+                <div class="photo-caption-tag">The Sleeping Beauty😴😇 </div>
               </div>
             </div>
 
@@ -348,7 +354,7 @@
                 <div class="photo-inner-box">
                   <img src="assets/memory3.jpg" alt="Anya with Chimera Plushie" />
                 </div>
-                <div class="photo-caption-tag">Best Friend Chimera! 🎈</div>
+                <div class="photo-caption-tag">Best Chaotic Lady!🎈</div>
               </div>
             </div>
 
@@ -365,7 +371,7 @@
                 <div class="photo-inner-box">
                   <img src="assets/memory4.jpg" alt="Anya Blowing Out Candles" />
                 </div>
-                <div class="photo-caption-tag">Make A Wish 🕯️✨</div>
+                <div class="photo-caption-tag">Pretty Lady 😻</div>
               </div>
             </div>
 
@@ -382,7 +388,7 @@
                 <div class="photo-inner-box">
                   <img src="assets/memory5.jpg" alt="Anya and Bond Dog" />
                 </div>
-                <div class="photo-caption-tag">Secret Agent Anya & Bond 🐶</div>
+                <div class="photo-caption-tag">Kya dost mil gaye!! 😪🫠</div>
               </div>
             </div>
 
@@ -846,5 +852,10 @@
   <div id="midnight-burst"></div>
 
   <script src="script.js"></script>
+  <!-- Background Music Player -->
+  <audio id="bg-music" autoplay loop controls style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; opacity: 0.7; border-radius: 30px;">
+  <source src="assets/music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
 </body>
 </html>

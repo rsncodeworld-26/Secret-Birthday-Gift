@@ -59,7 +59,7 @@ function playMidnightChime() {}
 })();
 
 /* ─── SHINCHAN PASSCODE VERIFICATION (4 DIGITS) ─── */
-const TARGET_PASSCODE = "2005"; // 4-digit passcode
+const TARGET_PASSCODE = "270726"; // 4-digit passcode
 
 const SHINCHAN_GIFS = {
   ask: "assets/shinchan-birthday.png",
@@ -69,11 +69,11 @@ const SHINCHAN_GIFS = {
 let enteredDigits = "";
 
 function updateDateBoxes() {
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 6; i++) {
     const box = document.getElementById(`b${i}`);
     if (!box) continue;
     box.textContent = enteredDigits[i] || "";
-    if (i === enteredDigits.length && enteredDigits.length < 4) {
+    if (i === enteredDigits.length && enteredDigits.length < 6) {
       box.classList.add('active');
     } else {
       box.classList.remove('active');
@@ -83,10 +83,12 @@ function updateDateBoxes() {
 updateDateBoxes();
 
 function pressKey(num) {
-  if (enteredDigits.length < 4) {
+  // This will start the music as soon as they press a number!
+  document.getElementById('bg-music').play();
+  if (enteredDigits.length < 6) {
     enteredDigits += num;
     updateDateBoxes();
-    if (enteredDigits.length === 4) {
+    if (enteredDigits.length === 6) {
       setTimeout(submitBirthdayDate, 220);
     }
   }
@@ -479,7 +481,7 @@ const LETTER_SECTIONS = [
   },
   {
     id: 'letter-closing-el',
-    text: "Happy birthday, my love. I love you more than you know. 🫶🏻🎂❤️"
+    text: "Happy birthday, Pari. You are really a fairy in my uni life 😊💗. I love you more than you know. 🫶🏻🎂❤️"
   }
 ];
 
